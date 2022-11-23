@@ -38,3 +38,15 @@ function sourcechanger (){
 
 clickbutton.addEventListener('click', sourcechanger)
 
+const buttons = document.querySelector('.button-container');
+function buttonchanger(e){
+
+    e.target.classList.add('colorchange')
+};
+buttons.addEventListener('mouseover', buttonchanger)
+
+function buttoncolorchanger(e){
+    e.target.style.backgroundColor = (e.target.textContent)
+}
+buttons.addEventListener('click', buttoncolorchanger)
+
